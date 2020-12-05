@@ -162,3 +162,10 @@ patch:
         patched: '2020-12-05T11:21:33.455Z'
     - react-scripts > webpack-dev-server > http-proxy-middleware > lodash:
         patched: '2020-12-05T11:21:33.455Z'
+  SNYK-JS-LODASH-450202:
+    - react-scripts > webpack-manifest-plugin > lodash:
+        patched: '2020-12-05T11:45:58.338Z'
+    - react-scripts > optimize-css-assets-webpack-plugin > last-call-webpack-plugin > lodash:
+        patched: '2020-12-05T11:45:58.338Z'
+    - react-scripts > webpack-dev-server > http-proxy-middleware > lodash:
+        patched: '2020-12-05T11:45:58.338Z'
