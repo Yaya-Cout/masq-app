@@ -10,7 +10,9 @@
     "lint": "eslint --fix --ext .js,.jsx ./src",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "browserslist": [
     ">0.2%",
@@ -19,7 +21,7 @@
     "not op_mini all"
   ],
   "dependencies": {
-    "bluebird": "^3.5.3",
+    "bluebird": "^3.7.2",
     "classnames": "^2.2.6",
     "detect-browser": "^3.0.1",
     "hyperdb": "^3.5.0",
@@ -32,14 +34,15 @@
     "react-responsive": "^6.0.0",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "^2.1.0",
-    "redux": "^4.0.1",
+    "react-scripts": "^4.0.0",
+    "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
-    "signalhubws": "^1.0.7",
+    "signalhubws": "^1.0.12",
     "typeface-asap": "0.0.54",
     "uuid": "^3.3.2",
     "webrtc-swarm": "git+https://github.com/QwantResearch/webrtc-swarm#masq",
-    "masq-common": "git+https://github.com/QwantResearch/masq-common"
+    "masq-common": "git+https://github.com/QwantResearch/masq-common",
+    "snyk": "^1.434.2"
   },
   "devDependencies": {
     "@trust/webcrypto": "^0.9.2",
@@ -55,5 +58,6 @@
     "node-sass": "^4.9.4",
     "random-access-memory": "^3.0.0",
     "wrtc": "^0.3.3"
-  }
+  },
+  "snyk": true
 }
